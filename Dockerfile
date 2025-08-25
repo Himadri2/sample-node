@@ -1,9 +1,16 @@
-FROM node
-WORKDIR /app
+FROM node:16-alpine
 
-COPY . .
-EXPOSE 3000
+WORKDIR /app
 
 COPY package*.json ./
 
-ENTRYPOINT start npm
+COPY package.json ./
+
+RUN npm install --force
+
+COPY . .
+
+EXPOSE 3000
+
+CMD ["npm", "start"]
+
