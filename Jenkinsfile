@@ -27,6 +27,7 @@ pipeline {
             steps{
                 script{
                     docker_compose_deploy()
+                    echo "deployment completed"
                 }
             }
         }
