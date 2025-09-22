@@ -1,6 +1,6 @@
 @Library("shared-lib") _
 pipeline {
-    agent { label "agent-01" }
+    agent any
     stages{
         stage("clone"){
             steps{
