@@ -26,7 +26,7 @@ pipeline {
         stage("deploy"){
             steps{
                 script{
-                    docker_compose_deploy()
+                    ansible_deploy()
                     echo "deployment completed"
                 }
             }
