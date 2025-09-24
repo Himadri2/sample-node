@@ -1,1 +1,1 @@
-this is test with using Ansible to connect to the slave servers via AWS SSM
+this is a test with using Ansible to connect to the slave servers via AWS SSM
